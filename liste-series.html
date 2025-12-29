@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/h2.css">
+        <link rel="stylesheet" href="css/picnic.css">
+        <link rel="stylesheet" href="css/fontello.css">
+    </head>
+
+    <body>
+    <h2> Listes </h2>
+    <a href="/">Accueil du site</a>
+    <ol>
+        {% for titre in liste %}
+        <li><a href="{{ titre[1] }}">{{ titre[0] }}</a></li>
+        {% endfor %}
+    </ol>
+    </body>
+</html> 

@@ -1,0 +1,5 @@
+.page {
+  max-width: 900px;
+  margin: auto;     /* centre la page */
+  padding: 20px;
+}

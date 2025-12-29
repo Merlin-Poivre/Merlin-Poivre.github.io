@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/h2.css">
+        <link rel="stylesheet" href="css/picnic.css">
+        <link rel="stylesheet" href="css/fontello.css">
+        <title>Genre de série</title>
+    </head>
+
+    <body>
+    <h2> Type de séries </h2>
+    <a href="/">Accueil du site</a>
+    <table>
+        <tr>
+            {% for colonne in entete %}
+            <th>{{ colonne }}</th>
+            {% endfor %}    
+        </tr>
+        
+        {% for ligne in tableau %}
+        <td><a href="/tableau/{{ ligne[0] }}">{{ ligne[1] }}</a></td>
+        {% endfor %}
+    </table>
+    </body>
+</html> 

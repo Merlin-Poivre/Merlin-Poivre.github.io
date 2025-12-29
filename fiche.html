@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/h1.css">
+        <link rel="stylesheet" href="css/picnic.css">
+        <link rel="stylesheet" href="css/fontello.css">
+    </head>
+
+    <body>
+    <a href="/genres">Retour au genres</a>
+    <h1>{{ donnee[0][1] }}</h1>
+    <h2> Distribution </h2>
+    <ul>
+    {% for name in donnee %}
+    <li> {{ name[3] }} (joué par {{ name[2] }})</li>
+    {% endfor %}
+    </ul>
+    <h2> Episodes </h2>
+    <table>
+        <tr>
+            {% for titre in table_head %}
+            <th>{{ titre }}</th>
+            {% endfor %}    
+        </tr>
+        
+        {% for ligne in episodes %}
+        <tr>
+            <td>{{ ligne[0] }}</td>
+            <td>{{ ligne[1] }}</td>
+            <td>{{ ligne[2] }}</td>
+            <td>{{ ligne[3] }}</td>
+            <td>{{ ligne[4] }}</td>     
+        </tr>
+        {% endfor %}
+    </table>
+    </body>
+</html> 
