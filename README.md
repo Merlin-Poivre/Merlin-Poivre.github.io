@@ -5,3 +5,4 @@ A simple one page website created to help complete beginners learn HTML basics, 
 
 Le site est dispo à cette adresse:
 <https://merlin-poivre.github.io/>
+[Voir le site en ligne](https://merlin-poivre.github.io/)
